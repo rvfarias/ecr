@@ -1,6 +1,6 @@
 import boto3
 
-session = boto3.Session(profile_name="RPE-SERVICOS", region_name="us-east-1")
+session = boto3.Session(profile_name="", region_name="us-east-1")
 ecr = session.client("ecr")
 
 
