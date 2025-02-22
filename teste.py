@@ -11,7 +11,7 @@ class Repo:
         self.lastImage = lastImage
         self.lastRecordedPullTime = lastRecordedPullTime
 
-session = boto3.Session(profile_name="RPE-NEWPROD", region_name="us-east-1")
+session = boto3.Session(profile_name="", region_name="us-east-1")
 ecr = session.client("ecr")
 
 def get_repos_about_lifecycle_policy(response):
